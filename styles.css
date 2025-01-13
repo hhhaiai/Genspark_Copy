@@ -54,4 +54,11 @@
   .bubble-copy-button:hover {
     background-color: #0b5ed7;
   }
+
+  /* 隐藏hljs自带的复制按钮 */
+  .hljs-copy-button {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
 }
