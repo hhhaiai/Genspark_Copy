@@ -1,32 +1,30 @@
-  {
-    "manifest_version": 3,
-    "name": "Genspark_Copy",
-    "version": "1.0.1",
-    "description": "Adds copy buttons in Genspark AI",
-    "permissions": [
-      "clipboardWrite",
-      "scripting",
-      "activeTab"
-    ],
-    "host_permissions": [
-      "https://www.genspark.ai/*"
-    ],
-    "content_scripts": [
-      {
-        "matches": [
-          "https://www.genspark.ai/*"
-        ],
-        "js": [
-          "index.js"
-        ],
-        "css": [
-          "styles.css"
-        ],
-        "run_at": "document_idle"
-      }
-    ],
-    "icons": {
-      "48": "icon48.svg",
-      "128": "icon128.svg"
+{
+  "manifest_version": 3,
+  "name": "Genspark_Copy",
+  "version": "2.0.0",
+  "description": "Replace copy button in Genspark AI",
+  "permissions": [
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://www.genspark.ai/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.genspark.ai/*"
+      ],
+      "js": [
+        "index.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
     }
+  ],
+  "icons": {
+    "48": "icon48.svg",
+    "128": "icon128.svg"
   }
+}
